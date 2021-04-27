@@ -12,13 +12,17 @@
 </div>
 
 <div id="product-info">
-  <h2>
-    Hassle free fitness tracking
-  </h2>
-  <h3>
-    Information
-  </h3>
-  {{ mainProduct.description }}
+  <div class="headline">
+    <h2>
+      Hassle free fitness tracking
+    </h2>
+  </div>
+  <div class="description">
+    <h3>
+      Information
+    </h3>
+    {{ mainProduct.description }}
+  </div>
   
   <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
     <select name="id" id="productSelect">
