@@ -3,3 +3,9 @@
 {{ mainProduct.title }}
 
 {{ mainProduct.description }}
+
+{% for image in mainProduct.images %}
+
+{{ image | img_url }}
+
+{% endfor %}
