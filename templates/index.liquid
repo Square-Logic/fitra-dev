@@ -2,10 +2,14 @@
 
 <h1>{{ mainProduct.title }}</h1>
 
+<div id="product-images">
+  {% for image in mainProduct.images %}
+    <div class="single-product-image">
+      <img src="{{ image | img_url: 'large' }}" />
+    </div>
+  {% endfor %}
 
-{% for image in mainProduct.images %}
-<img src="{{ image | img_url: 'large' }}" />
-{% endfor %}
+</div>
 
 {{ mainProduct.description }}
 
