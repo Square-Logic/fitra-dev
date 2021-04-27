@@ -34,15 +34,7 @@
     <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
       <select name="id" id="productSelect">
         {% for variant in mainProduct.variants %}
-          {% if variant.available %}
-            <option value="{{ variant.id }}">
-              {{ variant.title }} - {{ variant.price | money_with_currency }}
-            </option>
-          {% else %}
-            <option disabled="disabled">
-              {{ variant.title }} - sold out
-            </option>
-          {% endif %}
+          <option value="{{ variant.id }}">{{ variant.title }}</option>
         {% endfor %}
       </select>
       {{ current_variant.price | money }}
