@@ -1,7 +1,8 @@
-{% {% assign mainProduct = all_products['fitra-activity-band'] %} %}
+{% assign mainProduct = all_products['fitra-activity-band'] %}
 
-{{ mainProduct.title}}
-{{ mainProduct.price | | money_without_trailing_zeros}}
+{{ mainProduct.title }}
+{{ mainProduct.price | | money_without_trailing_zeros }}
+{{ mainProduct.url }}
 
 <!-- {% for product in collections.frontpage.products limit:4 %}
   <div>
