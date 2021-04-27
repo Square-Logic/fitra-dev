@@ -37,10 +37,12 @@
           <option value="{{ variant.id }}">{{ variant.title }}</option>
         {% endfor %}
       </select>
-      {{ current_variant.price | money }}
-      <label for="Quantity">quantity</label>
-      <input type="number" id="Quantity" name="quantity" value="1" min="1">
-      <button type="submit" name="add" id="AddToCart">Add to cart</button>
+     
+      <button type="submit" name="add" id="AddToCart">
+        Add to cart
+        <span class="product-price">{{ mainProduct.price | money_without_trailing_zeros }}</span>
+      </button>
+      
     </form>
   </div>
 </div>
