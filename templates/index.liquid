@@ -1,5 +1,5 @@
 {{ all_products['fitra-activity-band'].title}}
-{{ all_products['fitra-activity-band'].price | money}}
+{{ all_products['fitra-activity-band'].price | | money_without_trailing_zeros}}
 
 <!-- {% for product in collections.frontpage.products limit:4 %}
   <div>
