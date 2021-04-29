@@ -11,7 +11,7 @@
         {% for item in cart.items %}
           <tr>
             <td>
-              {{ item.product.title }} &ndash; {{ item.variant.title }}
+              {% if item.quantity > 1 %}{{ item.quantity }}x {% endif %} {{ item.product.title }} &ndash; {{ item.variant.title }}
             </td>
             <td>
               {{ item.line_price | money }}
