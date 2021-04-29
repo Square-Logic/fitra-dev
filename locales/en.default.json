@@ -13,6 +13,9 @@
     "details_list": {
       "itemOne": "Companion apps for iOS & Android",
       "itemTwo": "Preorders begin shipping this March"
+    },
+    "form": {
+      "submit": "Preorder"
     }
   }
 }
