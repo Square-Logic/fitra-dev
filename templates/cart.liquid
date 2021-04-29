@@ -13,11 +13,10 @@
             <td>
               <a href="{{ item.url }}">{{ item.product.title }}</a>
               {{ item.variant.title }}
-              <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">remove</a>
             </td>
-            <td>{{ item.price | money }}</td>
             <td>
               {{ item.line_price | money }}
+              <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">X</a>
             </td>
           </tr>
         {% endfor %}
