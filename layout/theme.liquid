@@ -13,7 +13,19 @@
 </head>
 <body>
 
-<a href="/cart" class="link-to-cart">Link to cart</a>
+{% if template != 'cart' %}
+  <a href="/cart" class="link-to-cart">
+    {% if cart.item_count > 0 %}
+      Your Cart is filled
+    {% else %}
+      Your Cart is empty
+    {% endif %}
+  </a>
+{% else %}
+  <a href="/" class="link-to-home">
+  Link to Home
+  </a>
+{% endif %}    
   <main role="main">
     {{ content_for_layout }}
   </main>
