@@ -1,11 +1,14 @@
-<h1>Cart</h1>
+<h1>
+  Cart
+  <span class="cart-item-count">
+    {{ cart.item_count }}
+  </span>
+</h1>
 {% if cart.item_count > 0 %}
   <form action="/cart" method="post" novalidate>
     <table>
       <thead>
-        <th>Prod</th>
-        <th>Price</th>
-        <th>total</th>
+        <th colspan="2">Order Summary</th>
       </thead>
       <tbody>
         {% for item in cart.items %}
@@ -21,11 +24,22 @@
         {% endfor %}
       </tbody>
     </table>
-    <div>
-      <p>sub total : {{ cart.total_price | money }}</p>
-      <button type="submit" name="update">Update</button>
-      <button type="submit" name="checkout">Checkout</button>
-    </div>
+
+    <table id="cart-totals">
+      <tbody>
+        <tr>
+          <td>Shipping</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Subtotal</td>
+          <td>{{ cart.total_price | money }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <button type="submit" name="checkout">Checkout</button>
+
   </form>
 {% else %}
   Cart is empty
