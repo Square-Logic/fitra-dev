@@ -5,6 +5,7 @@
   </span>
 </h1>
 {% if cart.item_count > 0 %}
+<h2>All preorders ship free this March</h2>
   <form action="/cart" method="post" novalidate>
     <table>
       <thead>
@@ -41,6 +42,12 @@
     <button type="submit" name="checkout">Checkout</button>
 
   </form>
+
+  <p>
+    Any questions?
+    <a href="mailto:support@getfitra.com">support@getfitra.com</a>
+  </p>
+
 {% else %}
   Cart is empty
 {% endif %}
