@@ -11,11 +11,6 @@
         {% for item in cart.items %}
           <tr>
             <td>
-              <a href="{{ item.url | within: collections.all }}">
-                <img src="{{ item | img_url: 'medium' }}" alt="{{ item.title | escape }}">
-              </a>
-            </td>
-            <td>
               <a href="{{ item.url }}">{{ item.product.title }}</a>
               {{ item.variant.title }}
               <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">remove</a>
