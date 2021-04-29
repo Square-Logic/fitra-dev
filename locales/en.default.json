@@ -9,6 +9,10 @@
     "copy": {
       "headline": "Hassle free fitness tracking.",
       "description_headline": "Information"
+    },
+    "details_list": {
+      "itemOne": "Companion apps for iOS & Android",
+      "itemTwo": "Preorders begin shipping this March"
     }
   }
 }
