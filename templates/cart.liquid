@@ -11,8 +11,7 @@
         {% for item in cart.items %}
           <tr>
             <td>
-              <a href="{{ item.url }}">{{ item.product.title }}</a>
-              {{ item.variant.title }}
+              {{ item.product.title }} &ndash; {{ item.variant.title }}
             </td>
             <td>
               {{ item.line_price | money }}
