@@ -19,6 +19,12 @@
     }
   },
   "cart": {
+    "general":{
+      "title": "Cart",
+      "preorder_info": "All preorders ship free this March.",
+      "support_title": "Any questions?",
+      "support_email": "support@getritra.com"
+    },
     "button": {
       "filled": "Your Cart",
       "empty": "Your Cart is empty",
