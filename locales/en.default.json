@@ -23,7 +23,9 @@
       "title": "Cart",
       "preorder_info": "All preorders ship free this March.",
       "support_title": "Any questions?",
-      "support_email": "support@getritra.com"
+      "support_email": "support@getritra.com",
+      "empty":"Your Cart is empty",
+      "back": "Back to Fitra"
     },
     "button": {
       "filled": "Your Cart",
