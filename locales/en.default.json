@@ -31,6 +31,12 @@
       "filled": "Your Cart",
       "empty": "Your Cart is empty",
       "close": "Close"
+    },
+    "lines": {
+      "title": "Order Summary",
+      "shipping": "Shipping",
+      "subtotal": "Subtotal",
+      "free": "Free"
     }
   }
 }
