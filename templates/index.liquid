@@ -1,6 +1,6 @@
 {% assign mainProduct = all_products['fitra-activity-band'] %}
 
-<div id="page-index" class="grid">
+<div id="page-index" class="grid two-columns">
   <div id="product-images">
     {% for image in mainProduct.images %}
     <div class="single-product-image">
@@ -14,7 +14,7 @@
     <h1>{{ mainProduct.title }}</h1>
     
     <!--  Begin Info Grid -->
-    <div class="grid">
+    <div class="grid two-columns">
       <div class="headline">
         <h2>
           {{'product.copy.headline' | t }}
