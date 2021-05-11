@@ -102,12 +102,36 @@ select {
   text-align: left;
 }
 
-select {
+.styled-select {
+  position: relative;
+}
+
+.styled-select select {
   width: 100%;
   font-size: var(--body-font-size);
   line-height: var(--line-global);
   padding: var(--line-global);
   border: var(--black-border);
+}
+
+.styled-select .select-arrow {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  width: calc(var(--line-global) * 3 );
+  background: var(--white);
+  text-align: center;
+  line-height: calc(var(--line-global) * 3 );
+  border-left: var(--black-border);
+  pointer-events: none;
+}
+
+.styled-select .select-arrow img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
 }
 
 button {

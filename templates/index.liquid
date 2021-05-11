@@ -45,6 +45,9 @@
                 <option value="{{ variant.id }}">{{ variant.title }}</option>
               {% endfor %}
             </select>
+            <div class="select-arrow">
+              <img src="{{ 'icon-arrow-down.svg' | asset_url }}"/>
+            </div>
           </div>
          
           <button type="submit" name="add" id="add-to-cart-button">
