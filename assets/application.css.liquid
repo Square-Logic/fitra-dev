@@ -169,7 +169,7 @@ button {
 .main-content {
   min-height: 100vh;
   padding: var(--gutter-global);
-  width: 50%;
+  width: calc(50% + calc(var(--gutter-global) / 2 ) );
   margin-left: auto;
 }
 
@@ -178,7 +178,7 @@ button {
   left: 0;
   top: var(--gutter-global);
   bottom: var(--gutter-global);
-  width: 50%;
+  width: calc(50% - calc(var(--gutter-global) / 2 ) );
 }
 
 .sticky-side-image img {
