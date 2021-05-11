@@ -37,7 +37,7 @@
       </div>
       
       <div class="form-wrapper">
-        <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm">
+        <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-form">
           <label for="productSelect">{{ mainProduct.options.first }}</label>
           <select name="id" id="productSelect">
             {% for variant in mainProduct.variants %}
