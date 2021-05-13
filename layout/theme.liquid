@@ -20,6 +20,9 @@
     {% else %}
       {{ 'cart.button.empty' | t }}
     {% endif %}
+    <span class="cart-item-count">
+      {{ cart.item_count }}
+    </span>
   </a>
 {% else %}
   <a href="/" class="link-to-home">
