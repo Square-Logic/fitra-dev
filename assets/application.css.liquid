@@ -211,10 +211,15 @@ button {
 }
 
 .link-to-cart .cart-text {
+  display: none;
   position: absolute;
   right: calc(100% - calc(var(--gutter-global) / 2 ));
   top: var(--gutter-global);
   white-space: nowrap;
+}
+
+.link-to-cart:hover .cart-text {
+  display: block;
 }
 
 /* Index Styles */
