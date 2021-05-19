@@ -1,5 +1,9 @@
 <div id="page-cart">
 
+  <div class="sticky-side-image">
+    <img src="{{ 'Hero-Cart.jpg' | asset_url }}" >
+  </div>  
+
   <div id="cart" class="main-content">
     <h1>
       {{ 'cart.general.title' | t }}
@@ -7,7 +11,7 @@
         {{ cart.item_count }}
       </span>
     </h1>
-    
+
     {% if cart.item_count > 0 %}
     <h2>{{ 'cart.general.preorder_info' | t }}</h2>
       <form action="/cart" method="post" novalidate>
