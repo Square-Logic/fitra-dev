@@ -335,3 +335,63 @@ button {
 #back-to-fitra {
   margin-bottom: var(--line-global);
 }
+
+#cart-lines {
+
+}
+
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: 400;
+  padding-top: var(--line-global);
+  padding-bottom: var(--line-global);
+}
+
+tbody tr {
+  border-top: 1px solid var(--white);
+}
+
+td {
+  padding-top: var(--line-global);
+  padding-bottom: var(--line-global);
+  position: relative;
+}
+
+td:last-child {
+  text-align: right;
+  vertical-align: top;
+}
+
+.remove-line {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: var(--line-global) calc(var(--line-global) / 2 );
+  display: block;
+  text-align: center;
+  width: var(--gutter-global);
+}
+
+.remove-text {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  padding: var(--line-global) 0 var(--line-global) var(--line-global);
+  display: none;
+  background: var(--color-accent);
+}
+
+.remove-line:hover .remove-text {
+  display: block;
+}
+
+#cart-totals {
+
+}

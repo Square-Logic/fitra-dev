@@ -33,7 +33,10 @@
                 </td>
                 <td>
                   {{ item.line_price | money }}
-                  <a href="/cart/change?line={{ forloop.index }}&amp;quantity=0">X</a>
+                  <a class="remove-line" href="/cart/change?line={{ forloop.index }}&amp;quantity=0">
+                    <span class="remove-text">{{ 'cart.lines.remove' | t }}</span>
+                    <img class="remove-x" src="{{ 'icon-x.svg' | asset_url }}"/>
+                  </a>
                 </td>
               </tr>
               {% endfor %}
