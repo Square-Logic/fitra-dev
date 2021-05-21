@@ -18,7 +18,10 @@
       <div id="cart-content" class="grid two-columns">
 
         {% if cart.item_count > 0 %}
-        <h2>{{ 'cart.general.preorder_info' | t }}</h2>
+        
+        <div class="valign-bottom">
+          <h2>{{ 'cart.general.preorder_info' | t }}</h2>
+        </div>
         <form action="/cart" method="post" novalidate>
 
           <table id="cart-lines">
