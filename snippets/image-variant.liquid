@@ -1,0 +1,1 @@
+{% if image.attached_to_variant? %}data-variant="{{ image.variants.first.id }}"{% endif %} style="{% if forloop.index > 1 %}display:none;{% endif %}"

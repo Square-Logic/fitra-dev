@@ -3,7 +3,7 @@
 <div id="page-index">
   <div id="product-images" class="sticky-side-image">
     {% for image in mainProduct.images %}
-    <div class="single-product-image" {% if image.attached_to_variant? %}data-variant="{{ image.variants.first.id }}"{% endif %} style="{% if forloop.index > 1 %}display:none;{% endif %}">
+    <div class="single-product-image" {% include 'image-variant' %}>
       <img src="{{ image | img_url: 'x1440' }}" />
     </div>
     {% endfor %}    
