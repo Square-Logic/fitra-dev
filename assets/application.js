@@ -5,5 +5,4 @@ $(document).ready(function() {
 
     variant_image.show().siblings(':visible').hide();
   })
-
 });
