@@ -3,7 +3,7 @@
 <div id="page-index">
   <div id="product-images" class="sticky-side-image">
     {% for image in mainProduct.images %}
-    <div class="single-product-image" style="{% if forloop.index > 1 %}display:none;{% endif %}">
+    <div class="single-product-image" {% if image.attached_to_variant? %}data-variant="{{ image.variants.first.id }}"{% endif %} style="{% if forloop.index > 1 %}display:none;{% endif %}">
       <img src="{{ image | img_url: 'x1440' }}" />
     </div>
     {% endfor %}    
@@ -39,8 +39,9 @@
       <div class="form-wrapper">
         <form action="/cart/add" method="post" enctype="multipart/form-data" id="add-to-cart-form">
           <label for="productSelect">{{ mainProduct.options.first }}</label>
+
            <div class="styled-select">
-            <select name="id" id="productSelect">
+            <select name="id" id="variant-id">
               {% for variant in mainProduct.variants %}
                 <option value="{{ variant.id }}">{{ variant.title }}</option>
               {% endfor %}
